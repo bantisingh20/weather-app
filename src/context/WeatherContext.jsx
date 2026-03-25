@@ -51,7 +51,7 @@ export const WeatherProvider = ({ children }) => {
     if (recent.length > 0) {
       fetchWeather(recent[0]);  
     } else {
-      fetchWeather({ name: "Delhi", lat: 28.6139, lon: 77.2090 });
+      fetchWeather({ address: "Delhi", lat: 28.6139, lon: 77.2090 });
     }
   }, []);
 
